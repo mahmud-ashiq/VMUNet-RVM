@@ -13,6 +13,7 @@ class VMUNet(nn.Module):
                  load_ckpt_path=None,
                 ):
         super().__init__()
+        
 
         self.load_ckpt_path = load_ckpt_path
         self.num_classes = num_classes

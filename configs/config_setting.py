@@ -13,8 +13,8 @@ class setting_config:
         'num_classes': 1, 
         'input_channels': 3, 
         # ----- VM-UNet ----- #
-        'depths': [2,2,2,2],
-        'depths_decoder': [2,2,2,1],
+        'depths': [1,1,1,1],
+        'depths_decoder': [1,1,1,1],
         'drop_path_rate': 0.2,
         'load_ckpt_path': './pre_trained_weights/vmamba_small_e238_ema.pth',
     }
@@ -42,12 +42,13 @@ class setting_config:
     rank = None
     amp = False
     gpu_id = '0'
-    batch_size = 32
+    batch_size = 24
     epochs = 300
+
 
     work_dir = 'results/' + network + '_' + datasets + '_' + datetime.now().strftime('%A_%d_%B_%Y_%Hh_%Mm_%Ss') + '/'
 
-    print_interval = 20
+    print_interval = 25
     val_interval = 30
     save_interval = 100
     threshold = 0.5

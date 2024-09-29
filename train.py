@@ -85,7 +85,7 @@ def main(config):
     else: raise Exception('network in not right!')
     model = model.cuda()
 
-    cal_params_flops(model, 256, logger)
+    cal_params_flops(model, 192, logger)
 
 
 
