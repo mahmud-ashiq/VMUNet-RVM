@@ -15,6 +15,7 @@ from configs.config_setting import setting_config
 import warnings
 warnings.filterwarnings("ignore")
 
+import zipfile
 
 
 def main(config):
@@ -104,7 +105,6 @@ def main(config):
     min_loss = 999
     start_epoch = 1
     min_epoch = 1
-
 
 
 

@@ -19,11 +19,15 @@ class setting_config:
         'load_ckpt_path': './pre_trained_weights/vmamba_small_e238_ema.pth',
     }
 
-    datasets = 'isic18' 
+    datasets = 'covid-lls' 
     if datasets == 'isic18':
         data_path = './data/isic2018/'
     elif datasets == 'isic17':
         data_path = './data/isic2017/'
+    elif datasets == 'kvasir-seg':
+        data_path = './data/kvasir-seg/'
+    elif datasets == 'covid-lls':
+        data_path = './data/covid-lls/'
     else:
         raise Exception('datasets in not right!')
 
@@ -42,15 +46,15 @@ class setting_config:
     rank = None
     amp = False
     gpu_id = '0'
-    batch_size = 24
-    epochs = 300
+    batch_size = 32
+    epochs = 2
 
 
-    work_dir = 'results/' + network + '_' + datasets + '_' + datetime.now().strftime('%A_%d_%B_%Y_%Hh_%Mm_%Ss') + '/'
+    work_dir = 'results/' + network + '_' + datasets  + '/'
 
     print_interval = 25
     val_interval = 30
-    save_interval = 100
+    save_interval = 50
     threshold = 0.5
 
     train_transformer = transforms.Compose([
