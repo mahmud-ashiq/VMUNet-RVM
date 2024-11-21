@@ -19,7 +19,7 @@ class setting_config:
         'load_ckpt_path': './pre_trained_weights/vmamba_small_e238_ema.pth',
     }
 
-    datasets = 'covid-lls' 
+    datasets = 'isic17' 
     if datasets == 'isic18':
         data_path = './data/isic2018/'
     elif datasets == 'isic17':
@@ -46,11 +46,11 @@ class setting_config:
     rank = None
     amp = False
     gpu_id = '0'
-    batch_size = 32
-    epochs = 2
+    batch_size = 24
+    epochs = 1
 
 
-    work_dir = 'results/' + network + '_' + datasets  + '/'
+    work_dir = 'results/' + '3080ti_'+ network + '_' + datasets  + '/'
 
     print_interval = 25
     val_interval = 30
