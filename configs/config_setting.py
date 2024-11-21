@@ -19,7 +19,7 @@ class setting_config:
         'load_ckpt_path': './pre_trained_weights/vmamba_small_e238_ema.pth',
     }
 
-    datasets = 'ph2' 
+    datasets = 'ham10k' 
     if datasets == 'isic18':
         data_path = './data/isic2018/'
     elif datasets == 'isic17':
@@ -30,6 +30,8 @@ class setting_config:
         data_path = './data/covid-lls/'
     elif datasets == 'ph2':
         data_path = './data/ph2/'
+    elif datasets == 'ham10k':
+        data_path = './data/ham10k/'
     else:
         raise Exception('datasets in not right!')
 
@@ -48,7 +50,7 @@ class setting_config:
     rank = None
     amp = False
     gpu_id = '0'
-    batch_size = 24
+    batch_size = 30
     epochs = 300
 
 

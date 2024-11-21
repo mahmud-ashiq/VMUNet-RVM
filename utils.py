@@ -457,6 +457,13 @@ class myNormalize:
             else:
                 self.mean = 152.095
                 self.std = 41.498
+        elif data_name == 'ham10k':
+            if train:
+                self.mean = 159.307
+                self.std = 28.702
+            else:
+                self.mean = 159.783
+                self.std = 28.898
             
     def __call__(self, data):
         img, msk = data
