@@ -438,11 +438,11 @@ class myNormalize:
                 self.std = 35.3346
         elif data_name == 'covid-lls':
             if train:
-                self.mean = 72.287
-                self.std = 54.871
+                self.mean = 72.498
+                self.std = 54.937
             else:
-                self.mean = 71.884
-                self.std = 55.771
+                self.mean = 74.042
+                self.std = 56.116
         elif data_name == 'kvasir-seg':
             if train:
                 self.mean = 94.603
