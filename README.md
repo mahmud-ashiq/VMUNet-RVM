@@ -179,4 +179,4 @@ After training completion, find your results in:
 
 ## 📞 Support & Contact
 
-For any queries, issues, or assistance, please feel free to reach out: m.ashiqfida@gmail.com or [Linedkin](https://www.linkedin.com/in/mahmud-ashiq/)
+For any queries, issues, or assistance, please feel free to reach out: m.ashiqfida@gmail.com or [Linkedin](https://www.linkedin.com/in/mahmud-ashiq/)
