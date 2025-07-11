@@ -19,7 +19,7 @@ class setting_config:
         'load_ckpt_path': './pre_trained_weights/vmamba_small_e238_ema.pth',
     }
 
-    datasets = 'covid-lls' 
+    datasets = 'dut-omron' 
     if datasets == 'isic18':
         data_path = './data/isic2018/'
     elif datasets == 'isic17':
@@ -32,6 +32,14 @@ class setting_config:
         data_path = './data/ph2/'
     elif datasets == 'ham10k':
         data_path = './data/ham10k/'
+    elif datasets == 'ecssd':
+        data_path = './data/ecssd/'
+    elif datasets == 'duts':
+        data_path = './data/duts/'
+    elif datasets == 'p3m':
+        data_path = './data/p3m/'
+    elif datasets == 'dut-omron':
+        data_path = './data/dut-omron/'
     else:
         raise Exception('datasets in not right!')
 

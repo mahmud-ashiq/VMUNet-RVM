@@ -464,6 +464,34 @@ class myNormalize:
             else:
                 self.mean = 159.783
                 self.std = 28.898
+        elif data_name == 'ecssd':
+            if train:
+                self.mean = 107.190
+                self.std = 53.774
+            else:
+                self.mean = 108.173
+                self.std = 53.773
+        elif data_name == 'duts':
+            if train:
+                self.mean = 114.962
+                self.std = 57.226
+            else:
+                self.mean =  115.181
+                self.std = 57.921
+        elif data_name == 'p3m':
+            if train:
+                self.mean = 118.300
+                self.std = 59.464
+            else:
+                self.mean =  120.960
+                self.std = 60.762
+        elif data_name == 'dut-omron':
+            if train:
+                self.mean = 119.467
+                self.std = 57.758
+            else:
+                self.mean =  118.519
+                self.std = 58.739
             
     def __call__(self, data):
         img, msk = data
