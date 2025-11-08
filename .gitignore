@@ -163,3 +163,5 @@ cython_debug/
 data/
 pre_trained_weights/
 results/
+
+temp.md
