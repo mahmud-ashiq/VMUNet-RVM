@@ -12,7 +12,6 @@
 
 <sup>1</sup> Department of Computer Science, Faculty of Science & Technology, American International University- Bangladesh
 
-Paper: Our manuscript is currently under peer review by [**Visual Computing for Industry, Biomedicine, and Art**](https://vciba.springeropen.com/)
 
 </div>
 
